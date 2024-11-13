@@ -22,4 +22,11 @@
         android:name="uk.co.sangharsh.smp.subwise.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/active_subscription_list"
+        android:name="uk.co.sangharsh.smp.subwise.ui.active_subscription.ActiveSubscriptionFragment"
+        android:label="@string/active_subscriptions"
+        tools:layout="@layout/fragment_active_subscription_list" />
+
 </navigation>
