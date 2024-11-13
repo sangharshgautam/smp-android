@@ -15,7 +15,14 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    signingConfigs {
+        releaseSigningConfig {
+            storeFile file("smp_subwise.jks")
+            storePassword "SubWise"
+            keyAlias "SubWise"
+            keyPassword "SubWise"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -42,6 +49,7 @@ dependencies {
     implementation libs.navigation.ui
     implementation libs.legacy.support.v4
     implementation libs.recyclerview
+    implementation 'com.android.volley:volley:1.2.1'
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
